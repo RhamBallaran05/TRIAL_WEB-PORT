@@ -1,4 +1,4 @@
-import mypicture from "/images/mypicture.jpg"; // ✅ same image as Home.jsx
+import img2 from "../../images/mypicture.jpg"; // ✅ fixed path from About.jsx
 
 export const About = () => {
   return (
@@ -18,7 +18,7 @@ export const About = () => {
           <div className="absolute inset-0 rounded-full blur-2xl bg-gradient-to-r from-blue-500 via-sky-400 to-blue-700 animate-glowPulse"></div>
 
           <img
-            src={mypicture}
+            src={img2}
             alt="Ramon Ballaran"
             className="relative w-full h-full rounded-full object-cover border-4 border-blue-500 shadow-[0_0_40px_rgba(59,130,246,0.7)]"
           />

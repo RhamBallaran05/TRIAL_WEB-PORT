@@ -1,31 +1,36 @@
+import landingImg from "../../images/landing.jpg";
+import typoImg from "../../images/typo.jpg";
+import tableImg from "../../images/table.jpg";
+import jumboImg from "../../images/jumbo.jpg";
+
 export const Projects = () => {
   const works = [
     {
       title: "Landing Page",
       description:
         "A modern, responsive landing page built with HTML and CSS showcasing elegant layout and smooth navigation.",
-      img: "/images/landing.jpg",
+      img: landingImg, // ✅ imported
       link: "https://rhamballaran05.github.io/Ballaran_Ramon_FINAL_PROJECT/",
     },
     {
       title: "Typography",
       description:
         "A creative display of text styling and hierarchy, exploring the power of fonts, spacing, and readability in design.",
-      img: "/images/typo.jpg",
+      img: typoImg, // ✅ imported
       link: "https://rhamballaran05.github.io/Ballaran_BSCS-1-1_My_Typography/",
     },
     {
       title: "Responsive Table",
       description:
         "An adaptive and interactive data table that stays clear and functional on any device screen size.",
-      img: "/images/table.jpg",
+      img: tableImg, // ✅ imported
       link: "https://rhamballaran05.github.io/Ballaran_Responsive_Table/",
     },
     {
       title: "Jumbotron",
       description:
         "A visually appealing Jumbotron section designed to highlight key information with balance and aesthetic focus.",
-      img: "/images/jumbo.jpg",
+      img: jumboImg, // ✅ imported
       link: "https://rhamballaran05.github.io/Ballaran_Ramon_Jumbotron/",
     },
   ];

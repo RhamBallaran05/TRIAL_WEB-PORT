@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import img1 from "../../images/mypicture.jpg"; // ✅ fixed path
 
 export const Home = () => {
   return (
@@ -77,7 +78,7 @@ export const Home = () => {
 
         {/* Profile Image */}
         <img
-          src="/images/mypicture.jpg"
+          src={img1} // ✅ using fixed imported image
           alt="Ramon Ballaran"
           className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:scale-105 transition-transform duration-500"
         />

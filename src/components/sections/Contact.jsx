@@ -161,39 +161,39 @@ export const Contact = () => {
       </section>
 
       {/* FOOTER SECTION */}
-      <footer className="bg-black border-t border-gray-800 text-gray-400 py-12 text-center relative overflow-hidden">
-        {/* Footer Text */}
-        <div className="footer-text mb-8">
-          <p className="text-lg md:text-xl">
-            Submitted by:{" "}
-            <b className="text-blue-500 text-3xl md:text-4xl font-semibold tracking-wide">
-              Ramon E. Ballaran Jr | BSCS 3-1
-            </b>
-          </p>
-        </div>
+<footer className="bg-black border-t border-gray-800 text-gray-400 py-12 text-center relative overflow-hidden">
+  {/* Footer Text */}
+  <div className="footer-text mb-8">
+    <p className="text-3xl md:text-4xl font-semibold tracking-wide text-gray-400">
+      Submitted by:{" "}
+      <span className="text-blue-500">
+        Ramon E. Ballaran Jr | BSCS 3-1
+      </span>
+    </p>
+  </div>
 
-        {/* Glowing Divider Line */}
-        <div className="w-40 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-8 animate-pulse"></div>
+  {/* Glowing Divider Line */}
+  <div className="w-40 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-8 animate-pulse"></div>
 
-        {/* Scroll-to-Top Arrow */}
-        <div className="footer-iconTop flex justify-center">
-          <button
-            onClick={() =>
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              })
-            }
-            className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-[0_0_15px_rgba(59,130,246,0.7)] transition-all duration-300 hover:scale-110"
-            aria-label="Scroll to top"
-          >
-            <i className="bx bx-up-arrow-alt text-3xl"></i>
-          </button>
-        </div>
+  {/* Scroll-to-Top Arrow */}
+  <div className="footer-iconTop flex justify-center">
+    <button
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      }
+      className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-[0_0_15px_rgba(59,130,246,0.7)] transition-all duration-300 hover:scale-110"
+      aria-label="Scroll to top"
+    >
+      <i className="bx bx-up-arrow-alt text-3xl"></i>
+    </button>
+  </div>
 
-        {/* Decorative Glow */}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent pointer-events-none"></div>
-      </footer>
+  {/* Decorative Glow */}
+  <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent pointer-events-none"></div>
+</footer>
     </>
   );
 };
