@@ -1,4 +1,4 @@
-import img2 from "../../images/mypicture.jpg"; // ✅ fixed path from About.jsx
+import img2 from "../../images/mypicture.jpg";
 
 export const About = () => {
   return (
@@ -15,6 +15,7 @@ export const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-20">
         {/* About Image with animated glowing background */}
         <div className="relative w-64 h-64 md:w-80 md:h-80">
+          {/* ✅ Keep blur visible on all screen sizes */}
           <div className="absolute inset-0 rounded-full blur-2xl bg-gradient-to-r from-blue-500 via-sky-400 to-blue-700 animate-glowPulse"></div>
 
           <img
@@ -28,7 +29,6 @@ export const About = () => {
 
         {/* About Text */}
         <div className="max-w-xl text-center md:text-left space-y-4 animate-fadeIn delay-200">
-          {/* Futuristic moving gradient text */}
           <h3 className="text-2xl md:text-3xl font-semibold animate-text-gradient">
             3rd Year Student at CVSU Bacoor
           </h3>
@@ -83,7 +83,7 @@ export const About = () => {
   );
 };
 
-// Component for a single skill progress bar
+// Skill Progress Component
 const SkillProgress = ({ title, percent }) => (
   <div className="space-y-1">
     <div className="flex justify-between text-gray-300">
