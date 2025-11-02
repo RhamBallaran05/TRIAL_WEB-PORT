@@ -1,17 +1,19 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import img1 from "../../images/mypicture.jpg"; // ✅ fixed path
+import img1 from "../../images/mypicture.jpg";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-black text-gray-100 relative overflow-hidden"
+      className="min-h-screen pt-24 md:pt-0 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-black text-gray-100 relative overflow-hidden scroll-mt-24"
     >
       {/* Text Content */}
-      <div className="max-w-2xl space-y-6 text-center md:text-left animate-fadeIn md:w-1/2">
+      <div className="max-w-2xl w-full space-y-6 text-center md:text-left animate-fadeIn md:w-1/2">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Hi, I'm
-          <span className="ml-2 animate-text-gradient">Ramon Ballaran</span>
+          <span className="ml-2 animate-text-gradient block md:inline">
+            Ramon Ballaran
+          </span>
         </h1>
 
         <div className="text-animate">
@@ -71,14 +73,12 @@ export const Home = () => {
       </div>
 
       {/* Profile Image with background circles */}
-      <div className="hidden md:flex justify-center md:w-1/2 relative animate-fadeIn delay-200">
-        {/* Background Circles */}
+      <div className="hidden md:flex justify-center md:w-1/2 relative animate-fadeIn delay-200 mt-10 md:mt-0">
         <div className="circle-bg circle-bg-small -z-10" />
         <div className="circle-bg circle-bg-medium -z-10" />
 
-        {/* Profile Image */}
         <img
-          src={img1} // ✅ using fixed imported image
+          src={img1}
           alt="Ramon Ballaran"
           className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:scale-105 transition-transform duration-500"
         />
